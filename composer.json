@@ -48,6 +48,7 @@
         "drupal/tvi": "^1.0",
         "drupal/video_embed_field": "^2.0",
         "drupal/views_infinite_scroll": "^1.5",
+        "drupal/views_url_alias": "2.x-dev",
         "drush/drush": "^9.0.0",
         "michelf/php-markdown": "^1.8",
         "vlucas/phpdotenv": "^2.4",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a350defa35fcd473ae37b12419f00065",
+    "content-hash": "1176a7732364397be437367035bc9f83",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3933,6 +3933,56 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_infinite_scroll"
             }
+        },
+        {
+            "name": "drupal/views_url_alias",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_url_alias",
+                "reference": "f0514d001c44bf08a18b9016784641040a3a999b"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1517838780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "L-four",
+                    "homepage": "https://www.drupal.org/user/357826"
+                },
+                {
+                    "name": "erikwebb",
+                    "homepage": "https://www.drupal.org/user/273404"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                }
+            ],
+            "description": "Allows content related Views be filtered by path aliases.",
+            "homepage": "https://www.drupal.org/project/views_url_alias",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_url_alias"
+            },
+            "time": "2018-02-05T13:43:34+00:00"
         },
         {
             "name": "drush/drush",
@@ -9678,7 +9728,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/domain": 20
+        "drupal/domain": 20,
+        "drupal/views_url_alias": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
