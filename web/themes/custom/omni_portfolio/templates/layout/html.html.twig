@@ -100,6 +100,38 @@
            page_id="{{ MALAYSIA_FB_PAGE_ID }}">
       </div>
 
+    {% elseif 'from/indonesia' in current_url|render|render %}
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            appId: {{ INDO_FB_APP_ID }},
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v2.12'
+          });
+        };
+      </script>
+
+      <div class="fb-customerchat"
+           page_id="{{ INDO_FB_PAGE_ID }}">
+      </div>
+
+    {% elseif 'graduate' in current_url|render|render %}
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            appId: {{ GRADUATE_FB_APP_ID }},
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v2.12'
+          });
+        };
+      </script>
+
+      <div class="fb-customerchat"
+           page_id="{{ GRADUATE_FB_PAGE_ID }}">
+      </div>
+
     {% else %}
     {% endif %}
   </body>
