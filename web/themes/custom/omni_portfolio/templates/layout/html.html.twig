@@ -131,6 +131,21 @@
       <div class="fb-customerchat"
            page_id="{{ GRADUATE_FB_PAGE_ID }}">
       </div>
+    {% elseif 'from/myanmar' in current_url|render|render %}
+       <script>
+         window.fbAsyncInit = function () {
+           FB.init({
+             appId: {{ MYANMAR_FB_APP_ID }},
+             autoLogAppEvents: true,
+             xfbml: true,
+             version: 'v2.12'
+           });
+         };
+       </script>
+ 
+       <div class="fb-customerchat"
+            page_id="{{ MYANMAR_FB_PAGE_ID }}">
+       </div>
 
     {% else %}
     {% endif %}

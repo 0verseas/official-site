@@ -30,6 +30,8 @@ function omni_portfolio_preprocess_html(&$variables) {
   $variables['INDO_FB_APP_ID'] = getenv('INDO_FB_APP_ID');
   $variables['GRADUATE_FB_PAGE_ID'] = getenv('GRADUATE_FB_PAGE_ID');
   $variables['GRADUATE_FB_APP_ID'] = getenv('GRADUATE_FB_APP_ID');
+  $variables['MYANMAR_FB_PAGE_ID'] = getenv('MYANMAR_FB_PAGE_ID');
+  $variables['MYANMAR_FB_APP_ID'] = getenv('MYANMAR_FB_APP_ID');
 }
 
 function omni_portfolio_preprocess_page(&$variables) {
