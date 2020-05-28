@@ -39,7 +39,7 @@
           <div class="wrapper">
             {% if pattern|slice(8,1) == 1 %}
               <div class="slide-title element">
-                <h3 style="color:white;">{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</h3>
+                <h3>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</h3>
               </div>
             {% endif %}
             {% if item.content.body|render %}
@@ -80,7 +80,7 @@
                   </div>
                 {% endif %}
                 <div class="slide-title element">
-                  <h3 style="color:white;">{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</h3>
+                  <h3>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</h3>
                 </div>
                 {% if item.content.body|render %}
                   <div class="slide-content element" style="color:white">                   

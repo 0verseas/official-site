@@ -56,7 +56,6 @@
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
