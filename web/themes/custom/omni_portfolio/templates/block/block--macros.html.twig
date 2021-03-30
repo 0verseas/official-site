@@ -41,7 +41,13 @@
       {% if subtitle and subtitle_position == true %}
         <div class="subtitle {{ title_align }}" {{ substyle }}>{{ subtitle }}</div>
       {% endif %}
-      <h3 class="{{ title_size }} {{ title_align }}{% if title_case %} uppercase{% endif %}{% if title_border %} with-border{% endif %}" {{ style }}{{ title_attributes }}>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ title }}{% if url %}</a>{% endif %}</h3>
+
+	{% if title == '台灣十八大學群，興趣未來一把抓' %}
+           <h1 class="{{ title_size }} {{ title_align }}{% if title_case %} uppercase{% endif %}{% if title_border %} with-border{% endif %}" {{ style }}{{ title_attributes }}>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ title }}{% if url %}</a>{% endif %}</h1>
+	{% else %}
+           <h3 class="{{ title_size }} {{ title_align }}{% if title_case %} uppercase{% endif %}{% if title_border %} with-border{% endif %}" {{ style }}{{ title_attributes }}>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ title }}{% if url %}</a>{% endif %}</h3>
+	{% endif %}
+      
       {% if subtitle and subtitle_position == false %}
         <div class="subtitle {{ title_align }}" {{ substyle }}>{{ subtitle }}</div>
       {% endif %}
