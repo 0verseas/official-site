@@ -16,5 +16,5 @@
 #}
 {% for item in items %}
 {% set category %}{{ item.content|render}}{% endset %}
-{{ category|replace({'taxonomy/term/': 'portfolio?field_category_target_id='})|raw }}
+{{ category|replace({'taxonomy/term/': 'universities?field_category_target_id='})|raw }}
 {% endfor %}
