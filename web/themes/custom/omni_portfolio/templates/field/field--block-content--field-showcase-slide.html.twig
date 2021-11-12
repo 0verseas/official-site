@@ -39,7 +39,7 @@
           <div class="wrapper">
             {% if pattern|slice(8,1) == 1 %}
               <div class="slide-title element">
-                <h3>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</h3>
+                <p hidden>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</p>
               </div>
             {% endif %}
             {% if item.content.body|render %}
