@@ -38,8 +38,8 @@
         <div class="inner {{ pattern }}{{ filter }}" style="{{ background_image(image)}}">
           <div class="wrapper">
             {% if pattern|slice(8,1) == 1 %}
-              <div class="slide-title element">
-                <p hidden>{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</p>
+              <div class="slide-title element" style="padding:0px;">
+                <p style="font-size:28pt; font-weight:bold; color:white;">{% if url %}<a href="{{ url }}" target="_blank">{% endif %}{{ item.content.field_title }}{% if url %}</a>{% endif %}</p>
               </div>
             {% endif %}
             {% if item.content.body|render %}
